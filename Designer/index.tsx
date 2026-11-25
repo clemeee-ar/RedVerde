@@ -1,15 +1,15 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Layers, Map as MapIcon } from 'lucide-react';
-import { EDGES } from '../../data/corridors';
-import { CorridorMap, DEFAULT_LAYERS, type MapLayers } from '../../components/map/CorridorMap';
-import { ConfigPanel } from '../../components/corridor/ConfigPanel';
-import { ResultsPanel } from '../../components/corridor/ResultsPanel';
-import { SegmentDialog } from '../../components/corridor/SegmentDialog';
-import { useScenario } from '../../state/scenario';
-import { computeCorridors } from '../../algorithms/leastCostPath';
-import type { CorridorResult, SegmentResult } from '../../types';
-import { Button } from '../../components/ui/button';
-import { cn } from '../../lib/utils';
+import { EDGES } from '@/corridors';
+import { CorridorMap, DEFAULT_LAYERS, type MapLayers } from '@/map/CorridorMap';
+import { ConfigPanel } from '@/corridor/ConfigPanel';
+import { ResultsPanel } from '@/corridor/ResultsPanel';
+import { SegmentDialog } from '@/corridor/SegmentDialog';
+import { useScenario } from '@/scenario';
+import { computeCorridors } from '@/leastCostPath';
+import type { CorridorResult, SegmentResult } from '@/index';
+import { Button } from '@/ui/button';
+import { cn } from '@/utils';
 
 const LAYER_DEFS: { id: keyof MapLayers; label: string; grupo: string }[] = [
   { id: 'areasVerdes', label: 'Áreas verdes existentes', grupo: 'Base' },

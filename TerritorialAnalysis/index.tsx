@@ -6,10 +6,10 @@ import 'leaflet/dist/leaflet.css';
 import {
   accesoCells, densidadCells, riesgoHidricoCells, temperaturaCells, vegetacionCells, vulnerabilidadCells,
   type EnvironmentalCell,
-} from '../../data/environmental';
+} from '@/environmental';
 
-import type { CriterionId } from '../../types';
-import { cn } from '../../lib/utils';
+import type { CriterionId } from '@/index';
+import { cn } from '@/utils';
 
 interface IndicatorDef {
   id: string;

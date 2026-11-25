@@ -4,13 +4,13 @@ import {
 } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { AVENIDAS, EJE_BY_ID, GREEN_AREAS, NODES, NODE_BY_ID } from '../../data/corridors';
+import { AVENIDAS, EJE_BY_ID, GREEN_AREAS, NODES, NODE_BY_ID } from '@/corridors';
 import {
   accesoCells, densidadCells, riesgoHidricoCells, temperaturaCells, vegetacionCells, vulnerabilidadCells,
   type EnvironmentalCell,
-} from '../../data/environmental';
+} from '@/environmental';
 
-import type { CorridorResult, EjeId, LatLng, SegmentResult } from '../../types';
+import type { CorridorResult, EjeId, LatLng, SegmentResult } from '@/index';
 
 const ENV_COLORS = ['#B8DCC5', '#7FC49A', '#E7C25A', '#E7A44A', '#D97B4A', '#C65B50'];
 

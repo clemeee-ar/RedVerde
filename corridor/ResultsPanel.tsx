@@ -1,9 +1,9 @@
 import { BarChart3, GitCompare, Info, Leaf, Route } from 'lucide-react';
 import { Bar, BarChart, CartesianGrid, Cell, ResponsiveContainer, Tooltip as ReTooltip, XAxis, YAxis } from 'recharts';
-import type { CorridorResult, Weights } from '../../types';
-import { economicEstimates, environmentalBenefits, formatUF } from '../../algorithms/leastCostPath';
-import { compareRoutes, explainSelection, type CorridorLike } from '../../algorithms/indicators/comparison';
-import { NODE_BY_ID } from '../../data/corridors';
+import type { CorridorResult, Weights } from '@/index';
+import { economicEstimates, environmentalBenefits, formatUF } from '@/leastCostPath';
+import { compareRoutes, explainSelection, type CorridorLike } from '@/indicators/comparison';
+import { NODE_BY_ID } from '@/corridors';
 
 interface Props {
   optima: CorridorResult | null;

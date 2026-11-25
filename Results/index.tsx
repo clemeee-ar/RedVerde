@@ -1,11 +1,11 @@
 import { useMemo } from 'react';
 import { BarChart3, GitCompare, Info, Leaf, ShieldAlert } from 'lucide-react';
 import { Bar, BarChart, CartesianGrid, Cell, Legend, ResponsiveContainer, Tooltip as ReTooltip, XAxis, YAxis } from 'recharts';
-import { useScenario } from '../../state/scenario';
-import { computeCorridors } from '../../algorithms/leastCostPath';
-import { compareRoutes, explainSelection, type CorridorLike } from '../../algorithms/indicators/comparison';
-import { EDGES } from '../../data/corridors';
-import type { CorridorResult } from '../../types';
+import { useScenario } from '@/scenario';
+import { computeCorridors } from '@/leastCostPath';
+import { compareRoutes, explainSelection, type CorridorLike } from '@/indicators/comparison';
+import { EDGES } from '@/corridors';
+import type { CorridorResult } from '@/index';
 
 export function ResultsPage() {
   const { scenario } = useScenario();

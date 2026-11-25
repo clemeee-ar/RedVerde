@@ -1,5 +1,5 @@
 
-import type { CorridorNode, EjeDef, GraphEdge } from '../types';
+import type { CorridorNode, EjeDef, GraphEdge } from '@/index';
 
 export const EJES: EjeDef[] = [
   // Troncales norte-sur

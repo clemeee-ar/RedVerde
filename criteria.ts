@@ -1,4 +1,4 @@
-import type { CriterionDef } from '../types';
+import type { CriterionDef } from '@/index';
 
 /**
  * Transformación de resistencia definida por criterio.

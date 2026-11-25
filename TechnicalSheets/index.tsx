@@ -1,11 +1,11 @@
 import { useMemo, useState } from 'react';
 import { FileDown, Info, FileText } from 'lucide-react';
-import { useScenario } from '../../state/scenario';
-import { computeCorridors } from '../../algorithms/leastCostPath';
-import { EDGES, NODE_BY_ID, EJE_BY_ID } from '../../data/corridors';
-import { economicEstimates, environmentalBenefits, formatUF } from '../../algorithms/leastCostPath';
+import { useScenario } from '@/scenario';
+import { computeCorridors } from '@/leastCostPath';
+import { EDGES, NODE_BY_ID, EJE_BY_ID } from '@/corridors';
+import { economicEstimates, environmentalBenefits, formatUF } from '@/leastCostPath';
 import { useTechnicalSheetExport } from './export';
-import type { CorridorResult } from '../../types';
+import type { CorridorResult } from '@/index';
 
 export function TechnicalSheetsPage() {
   const { scenario } = useScenario();

@@ -1,7 +1,7 @@
 import { CircleDot, FileDown, Sparkles, AlertTriangle } from 'lucide-react';
-import { useScenario } from '../../state/scenario';
-import { NODE_BY_ID } from '../../data/corridors';
-import { EJE_BY_ID } from '../../data/corridors';
+import { useScenario } from '@/scenario';
+import { NODE_BY_ID } from '@/corridors';
+import { EJE_BY_ID } from '@/corridors';
 import { Button } from '../ui/button';
 
 interface Props {

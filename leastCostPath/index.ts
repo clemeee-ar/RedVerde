@@ -1,5 +1,5 @@
 
-import { CRITERIA } from '../../data/criteria';
+import { CRITERIA } from '@/criteria';
 import type {
   CorridorResult,
   EdgeIndicators,
@@ -7,7 +7,7 @@ import type {
   LatLng,
   SegmentResult,
   Weights,
-} from '../../types';
+} from '@/index';
 
 /**
  * Normaliza los pesos para que sumen 1.

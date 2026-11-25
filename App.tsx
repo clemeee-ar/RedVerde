@@ -1,16 +1,16 @@
-import { ScenarioProvider, useScenario } from './state/scenario';
-import { Sidebar } from './components/layout/Sidebar';
-import { Topbar } from './components/layout/Topbar';
-import { DesignerPage } from './pages/Designer';
+import { ScenarioProvider, useScenario } from '@/scenario';
+import { Sidebar } from '@/layout/Sidebar';
+import { Topbar } from '@/layout/Topbar';
+import { DesignerPage } from '@/Designer';
 
-import { TerritorialAnalysisPage } from './pages/TerritorialAnalysis';
-import { BiodiversityPage } from './pages/Biodiversity';
-import { ResultsPage } from './pages/Results';
-import { DataUploadPage } from './pages/DataUpload';
-import { TechnicalSheetsPage } from './pages/TechnicalSheets';
-import { useTechnicalSheetExport } from './pages/TechnicalSheets/export';
-import { computeCorridors } from './algorithms/leastCostPath';
-import { EDGES } from './data/corridors';
+import { TerritorialAnalysisPage } from '@/TerritorialAnalysis';
+import { BiodiversityPage } from '@/Biodiversity';
+import { ResultsPage } from '@/Results';
+import { DataUploadPage } from '@/DataUpload';
+import { TechnicalSheetsPage } from '@/TechnicalSheets';
+import { useTechnicalSheetExport } from '@/TechnicalSheets/export';
+import { computeCorridors } from '@/leastCostPath';
+import { EDGES } from '@/corridors';
 
 function Shell() {
   const { activeModule, scenario, update, setActiveModule } = useScenario();

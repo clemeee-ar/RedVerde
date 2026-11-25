@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { FileUp, FileCheck2, FileX2, Download, FolderUp, Info } from 'lucide-react';
-import { useScenario } from '../../state/scenario';
-import type { UploadedDataset } from '../../types';
+import { useScenario } from '@/scenario';
+import type { UploadedDataset } from '@/index';
 
 const CSV_TEMPLATE = `nombre,lat,lng,indicador,valor
 Parque Demo, -33.45, -70.66, temperatura, 62

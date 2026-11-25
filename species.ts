@@ -1,4 +1,4 @@
-import type { Species } from '../types';
+import type { Species } from '@/index';
 
 export const SPECIES: Species[] = [
   {

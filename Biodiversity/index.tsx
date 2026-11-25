@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Droplets, Sun, Tractor, Leaf, Info } from 'lucide-react';
-import { SPECIES, SPECIES_PHOTOS } from '../../data/species';
-import type { Species } from '../../types';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '../../components/ui/dialog';
-import { cn } from '../../lib/utils';
+import { SPECIES, SPECIES_PHOTOS } from '@/species';
+import type { Species } from '@/index';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/ui/dialog';
+import { cn } from '@/utils';
 
 const ESTRATOS = [
   { id: 'todas', label: 'Todas' },

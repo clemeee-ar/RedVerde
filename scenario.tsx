@@ -1,6 +1,6 @@
 import { createContext, useContext, useMemo, useState, type ReactNode } from 'react';
-import type { EjeId, UploadedDataset, Weights } from '../types';
-import { DEFAULT_WEIGHTS } from '../data/criteria';
+import type { EjeId, UploadedDataset, Weights } from '@/index';
+import { DEFAULT_WEIGHTS } from '@/criteria';
 
 export interface Scenario {
   comuna: string;

@@ -1,7 +1,7 @@
-import type { EdgeIndicators, Species } from '../../types';
-import type { SegmentResult } from '../../types';
-import { SPECIES } from '../../data/species';
-import { CRITERIA_BY_ID } from '../../data/criteria';
+import type { EdgeIndicators, Species } from '@/index';
+import type { SegmentResult } from '@/index';
+import { SPECIES } from '@/species';
+import { CRITERIA_BY_ID } from '@/criteria';
 
 export interface SegmentRecommendationResult {
   species: Species;

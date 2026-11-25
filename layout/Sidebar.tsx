@@ -2,8 +2,8 @@ import { useMemo, useState } from 'react';
 import {
   LayoutGrid, Sprout, LineChart, FileBarChart2, FolderUp, Leaf, RotateCcw, MapPin, Database, FlaskConical, Download,
 } from 'lucide-react';
-import { cn } from '../../lib/utils';
-import { useScenario } from '../../state/scenario';
+import { cn } from '@/utils';
+import { useScenario } from '@/scenario';
 
 const MODULES = [
   { id: 'designer', label: 'Diseñador de corredores', icon: LayoutGrid },

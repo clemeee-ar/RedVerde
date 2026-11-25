@@ -1,9 +1,9 @@
 import { Droplets, Sun, Tractor } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '../ui/dialog';
-import type { SegmentResult } from '../../types';
-import { recommendSpecies } from '../../algorithms/indicators/speciesRecommendation';
-import { SPECIES_PHOTOS } from '../../data/species';
-import { NODE_BY_ID } from '../../data/corridors';
+import type { SegmentResult } from '@/index';
+import { recommendSpecies } from '@/indicators/speciesRecommendation';
+import { SPECIES_PHOTOS } from '@/species';
+import { NODE_BY_ID } from '@/corridors';
 
 interface Props {
   segment: SegmentResult | null;

@@ -1,15 +1,15 @@
 import { useMemo } from 'react';
 import { Info, RotateCcw, SlidersHorizontal } from 'lucide-react';
-import { CRITERIA, DEFAULT_WEIGHTS } from '../../data/criteria';
-import { COMUNAS, ORIGEN_OPTIONS, SECTORS } from '../../data/locations';
-import { useScenario } from '../../state/scenario';
-import { normalizeWeights } from '../../algorithms/leastCostPath';
+import { CRITERIA, DEFAULT_WEIGHTS } from '@/criteria';
+import { COMUNAS, ORIGEN_OPTIONS, SECTORS } from '@/locations';
+import { useScenario } from '@/scenario';
+import { normalizeWeights } from '@/leastCostPath';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
 import { Slider } from '../ui/slider';
 import { Button } from '../ui/button';
 import * as LucideIcons from 'lucide-react';
-import { EJES } from '../../data/corridors';
-import { NODE_BY_ID } from '../../data/corridors';
+import { EJES } from '@/corridors';
+import { NODE_BY_ID } from '@/corridors';
 
 interface Props {
   onGenerate: () => void;

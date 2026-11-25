@@ -1,12 +1,12 @@
 import { jsPDF } from 'jspdf';
-import { NODE_BY_ID } from '../../data/corridors';
-import { EJE_BY_ID } from '../../data/corridors';
-import { CRITERIA } from '../../data/criteria';
-import { normalizeWeights, economicEstimates, environmentalBenefits, formatUF } from '../../algorithms/leastCostPath';
-import { compareRoutes, explainSelection, type CorridorLike } from '../../algorithms/indicators/comparison';
-import { recommendSpecies } from '../../algorithms/indicators/speciesRecommendation';
-import type { CorridorResult, Weights } from '../../types';
-import { useScenario } from '../../state/scenario';
+import { NODE_BY_ID } from '@/corridors';
+import { EJE_BY_ID } from '@/corridors';
+import { CRITERIA } from '@/criteria';
+import { normalizeWeights, economicEstimates, environmentalBenefits, formatUF } from '@/leastCostPath';
+import { compareRoutes, explainSelection, type CorridorLike } from '@/indicators/comparison';
+import { recommendSpecies } from '@/indicators/speciesRecommendation';
+import type { CorridorResult, Weights } from '@/index';
+import { useScenario } from '@/scenario';
 
 const GREEN = [23, 77, 56] as const;
 const LIGHT = [184, 220, 197] as const;
