@@ -2,10 +2,20 @@
 export default {
   darkMode: ['class'],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    './index.html',
+    './*.{ts,tsx}',
+    './Biodiversity/**/*.{ts,tsx}',
+    './DataUpload/**/*.{ts,tsx}',
+    './Designer/**/*.{ts,tsx}',
+    './Results/**/*.{ts,tsx}',
+    './TechnicalSheets/**/*.{ts,tsx}',
+    './TerritorialAnalysis/**/*.{ts,tsx}',
+    './corridor/**/*.{ts,tsx}',
+    './indicators/**/*.{ts,tsx}',
+    './layout/**/*.{ts,tsx}',
+    './leastCostPath/**/*.{ts,tsx}',
+    './map/**/*.{ts,tsx}',
+    './ui/**/*.{ts,tsx}',
   ],
   theme: {
     extend: {
