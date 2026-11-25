@@ -9,7 +9,6 @@ import { useScenario } from '@/scenario';
 import { computeCorridors } from '@/leastCostPath';
 import type { CorridorResult, SegmentResult } from '@/index';
 import { Button } from '@/ui/button';
-import { cn } from '@/utils';
 
 const LAYER_DEFS: { id: keyof MapLayers; label: string; grupo: string }[] = [
   { id: 'areasVerdes', label: 'Áreas verdes existentes', grupo: 'Base' },

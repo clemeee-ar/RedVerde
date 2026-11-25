@@ -1,4 +1,3 @@
-import { useMemo, useState } from 'react';
 import {
   LayoutGrid, Sprout, LineChart, FileBarChart2, FolderUp, Leaf, RotateCcw, MapPin, Database, FlaskConical, Download,
 } from 'lucide-react';
@@ -22,12 +21,12 @@ export function Sidebar() {
         <div className="flex items-center gap-2">
           <Leaf className="h-7 w-7 text-[#B8DCC5]" />
           <div>
-            <div className="font-semibold tracking-wide text-[15px] leading-tight">CORREDOR VIVO</div>
+            <div className="font-semibold tracking-wide text-[15px] leading-tight">REDVERDE</div>
             <div className="text-[#B8DCC5] text-xs tracking-[0.2em]">SANTIAGO</div>
           </div>
         </div>
         <p className="text-[11px] text-white/60 mt-3 leading-snug">
-          Plataforma de planificación y optimización de infraestructura verde urbana
+          Plataforma de planificación territorial y de corredores verdes urbanos
         </p>
       </div>
 

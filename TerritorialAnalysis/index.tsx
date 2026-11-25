@@ -8,7 +8,6 @@ import {
   type EnvironmentalCell,
 } from '@/environmental';
 
-import type { CriterionId } from '@/index';
 import { cn } from '@/utils';
 
 interface IndicatorDef {

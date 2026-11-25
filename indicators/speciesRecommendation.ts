@@ -17,7 +17,6 @@ export function recommendSpecies(seg: SegmentResult): SegmentRecommendationResul
   const ancho = seg.anchoProm;
   const sol = (seg.ind.temperatura ?? 50) >= 60 ? 'alta' : 'media';
   const agua = (seg.ind.humedad ?? 50) >= 55 ? 'disponible' : 'restringida';
-  const contaminacion = (seg.ind.trafico ?? 50) >= 65 ? 'alta' : 'media';
 
   const arboles = SPECIES.filter((s) => s.estrato === 'arbol');
   const arbustos = SPECIES.filter((s) => s.estrato === 'arbusto');

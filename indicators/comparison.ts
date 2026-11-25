@@ -1,6 +1,6 @@
-import type { EdgeIndicators, GraphEdge, SegmentResult, Weights } from '@/index';
+import type { EdgeIndicators, Weights } from '@/index';
 import { CRITERIA } from '@/criteria';
-import { edgeCost, normalizeWeights, resistance } from '../leastCostPath';
+import { normalizeWeights, resistance } from '../leastCostPath';
 export interface RouteComparisonRow {
   etiqueta: string;
   color: string;

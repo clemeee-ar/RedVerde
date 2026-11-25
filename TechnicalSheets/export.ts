@@ -17,10 +17,10 @@ function header(doc: jsPDF, titulo: string) {
   doc.setTextColor(255, 255, 255);
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(13);
-  doc.text('CORREDOR VIVO SANTIAGO', 14, 12);
+  doc.text('REDVERDE SANTIAGO', 14, 12);
   doc.setFont('helvetica', 'normal');
   doc.setFontSize(8);
-  doc.text('Plataforma de planificación y optimización de infraestructura verde urbana', 14, 18);
+  doc.text('Plataforma de planificación territorial y de corredores verdes urbanos', 14, 18);
   doc.text('Prototipo de innovación territorial | Región Metropolitana', 14, 23);
   doc.setTextColor(...GREEN);
   doc.setFont('helvetica', 'bold');

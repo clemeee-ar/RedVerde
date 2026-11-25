@@ -26,7 +26,7 @@ export function Topbar({ onGenerate, onExport }: Props) {
   return (
     <header className="h-16 bg-white border-b border-[#dfe5e0] flex items-center px-6 gap-4 justify-between">
       <div className="flex items-center gap-3 min-w-0">
-        <h1 className="font-semibold text-[#263238] text-lg truncate">{titles[activeModule] ?? 'Corredor Vivo Santiago'}</h1>
+        <h1 className="font-semibold text-[#263238] text-lg truncate">{titles[activeModule] ?? 'RedVerde Santiago'}</h1>
         <span className="hidden md:inline-flex items-center gap-1 text-[11px] bg-[#F5F7F5] text-[#397D91] border border-[#dfe5e0] rounded px-2 py-0.5 whitespace-nowrap">
           <CircleDot className="h-3 w-3" /> {origen?.comuna} → {destino?.comuna}
         </span>

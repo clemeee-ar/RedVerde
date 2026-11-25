@@ -5,7 +5,6 @@ import { computeCorridors } from '@/leastCostPath';
 import { EDGES, NODE_BY_ID, EJE_BY_ID } from '@/corridors';
 import { economicEstimates, environmentalBenefits, formatUF } from '@/leastCostPath';
 import { useTechnicalSheetExport } from './export';
-import type { CorridorResult } from '@/index';
 
 export function TechnicalSheetsPage() {
   const { scenario } = useScenario();
